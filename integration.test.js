@@ -19,4 +19,12 @@ describe("Integration testing", () => {
     basket.add(candy2)
     expect(basket.getTotalPrice()).toBe(8.98)
   })
+
+  it('Can apply discount to basket price', () => {
+    basket.add(candy1)
+    basket.add(candy2)
+    basket.applyDiscount(5.0)
+    expect(basket.getTotalPrice()).toBe(3.98)
+
+  })
 })
