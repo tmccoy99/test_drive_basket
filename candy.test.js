@@ -7,5 +7,5 @@ test("getName returns name", () => {
 })
 
 test("getPrice returns price", () => {
-  expect(candy.getName()).toBe(3.99)
+  expect(candy.getPrice()).toBe(3.99)
 })
