@@ -8,7 +8,7 @@ class Basket {
   }
 
   add(item) {
-    this.price += item.price
+    this.price += item.getPrice()
   }
 
 }
